@@ -73,7 +73,10 @@ describe('selectCell', () => {
     // player X click on the third cell
     fireEvent.click(boardcells.at(2));
 
-    // cell = [null, null, 'X', null, null, null, null, null, null]
+    // player O click on the third cell, and nothing should happen
+    fireEvent.click(boardcells.at(2));
+
+    // cell = [null, null, 'X', null, null, null, null, null, null] remains X
     boardcells.forEach((cell, index) => {
       if(index === 2) {
         expect(cell.textContent).toBe("X");

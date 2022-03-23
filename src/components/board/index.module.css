@@ -10,7 +10,7 @@
   text-align: center;
   color: #345355;
 }
-.game-board
+.GameBoard
 {
 	width: 400px;
 	height: 400px;
@@ -24,7 +24,7 @@
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
-.board-cell
+.BoardCell
 {
   border: 6px solid #336C73;
   border-radius: 2px;
@@ -37,11 +37,11 @@
   cursor: pointer;
 }
 
-.board-cell:hover {
+.BoardCell:hover {
   background-color: #489F98;
 }
 
-.restart-game {
+.RestartGame {
   margin-top: 2rem;
   background-color: #345355;
   color: white;
@@ -51,6 +51,6 @@
   cursor: pointer;
   font-weight: bold;
 }
-.restart-game:hover {
+.RestartGame:hover {
   background-color: #489F98;
 }
